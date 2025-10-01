@@ -1,0 +1,128 @@
+@import "tailwindcss";
+/* Fondo del cuerpo */
+body {
+    background-color: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================
+   MENÚ DE NAVEGACIÓN
+   ========================= */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Los <li> en línea con inline-block */
+nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* espacio entre enlaces */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 2px solid crimson;
+    transition: background 0.5s, color 0.5s;
+}
+
+nav ul li a:hover {
+    background: crimson;
+    color: white;
+}
+
+/* =========================
+   ENCABEZADO DECORADO
+   ========================= */
+h1 {
+    color: crimson;
+    font-family: "Courier New", monospace;
+    border-bottom: 2px solid crimson;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+h1::before {
+    content: "☾ ";
+    color: #c9c9c9;
+    font-size: 22px;
+    margin-right: 5px;
+}
+h1::after {
+    content: " ☾";
+    color: #c9c9c9;
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+/* =========================
+   PÁRRAFO
+   ========================= */
+p {
+    border: 2px solid #444;
+    padding: 15px;
+    margin: 20px auto;
+    width: 60%;
+    background: #222;
+    transition: all 0.5s;
+}
+
+/* =========================
+   IMAGEN
+   ========================= */
+.imagen {
+    margin: 20px auto;
+    display: block;
+    max-width: 400px;
+    border: 3px solid crimson;
+}
+
+/* =========================
+   BOTÓN
+   ========================= */
+button {
+    padding: 10px 20px;
+    background: crimson;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+button:hover {
+    background: darkred;
+}
+
+/* =========================
+   CAJAS
+   ========================= */
+.caja {
+    width: 60%;
+    margin: 20px auto;
+    color: white;
+    background: #222;
+    text-align: center;
+}
+
+/* Caja 1 con mucho padding y borde grueso */
+.caja1 {
+    border: 4px solid crimson;
+    padding: 30px;
+    margin: 10px auto;
+}
+
+/* Caja 2 con menos padding y borde fino */
+.caja2 {
+    border: 1px solid gold;
+    padding: 10px;
+    margin: 40px auto;
+    position: relative;
+    left: 20px;   /* Avanzado: movida unos píxeles */
+    top: 10px;
+}
